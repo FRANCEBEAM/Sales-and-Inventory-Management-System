@@ -198,7 +198,7 @@ div.about-container div.about-socials {
 
   div.store-info {
     display: flex;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
     justify-content: center;
     align-items: center;
     padding: 0 7em;
@@ -281,6 +281,94 @@ div.about-container div.about-socials {
     width: 20%;
   }
 }
-nav {
-  padding: 0 6em;
+@media screen and (min-width: 1200px) {
+  nav {
+    padding: 0 4em;
+  }
+
+  div.search-container {
+    padding: 2em 4em;
+  }
+
+  div.hero-container {
+    padding: 0 5em;
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    justify-content: left;
+    align-items: center;
+  }
+  div.hero-container div.left-content div.text-content {
+    max-width: 1500px;
+    text-align: left;
+  }
+  div.hero-container div.left-content div.text-content h5 {
+    text-align: left;
+    font-size: 26px;
+  }
+  div.hero-container div.left-content div.text-content h1 {
+    text-align: left;
+    font-size: 46px;
+  }
+  div.hero-container div.left-content button {
+    display: inline-flex;
+    justify-content: left;
+    padding: 1em;
+  }
+  div.hero-container div.right-content {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  div.hero-container div.right-content div.bg-hero img {
+    display: flex;
+    justify-content: right;
+    display: flex;
+  }
+
+  p.shopCateg {
+    padding: 0 5em;
+  }
+
+  div.swiper div.swiper-wrapper div.swiper-slide {
+    border: solid #212529 2px;
+    border-radius: 1em;
+    padding-top: 2em;
+  }
+  div.swiper div.swiper-wrapper div.swiper-slide img {
+    width: 20%;
+  }
+  div.swiper div.swiper-wrapper div.swiper-slide p {
+    font-size: 18px;
+  }
+  div.swiper div.swiper-button-next {
+    padding: 0 7em;
+  }
+  div.swiper div.swiper-button-prev {
+    padding: 0 7em;
+  }
+
+  div.item-container {
+    padding: 0 6em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1280px) {
+  nav a.navbar-brand h1 {
+    font-size: 28px;
+  }
+  nav a.navbar-brand span.ent {
+    font-size: 24px;
+  }
+  nav div.collapse ul li.nav-item a.nav-link {
+    font-size: 20px;
+  }
+
+  div.item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }/*# sourceMappingURL=index.css.map */

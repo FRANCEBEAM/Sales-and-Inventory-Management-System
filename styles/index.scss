@@ -265,7 +265,7 @@ div.about-container{
     //STORE INFO
     div.store-info{
         display: flex;
-        margin-bottom: 6em;
+        margin-bottom: 4em;
         justify-content: center;
         align-items: center;
         padding: 0 7em;
@@ -372,12 +372,136 @@ nav{
 }
 
 // LAPTOP VIEW 1200
+@media screen and(min-width: 1200px){
+
 
 //Navigation
 nav{
-    padding: 0 6em;
+    padding: 0 4em;
+}
+
+//SEARCH BAR
+div.search-container{
+    padding: 2em 4em;
+}
+
+//HERO SECTION
+div.hero-container{
+    padding: 0 5em;
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    justify-content: left;
+    align-items: center;
+
+    div.left-content{
+
+    div.text-content{
+        max-width: 1500px;
+        text-align: left;
+        h5{
+            text-align: left;
+            font-size: 26px;
+        }
+        h1{
+            text-align: left;
+            font-size: 46px;
+        }
+    }
+
+    button{
+        display: inline-flex;
+        justify-content: left;
+        padding: 1em;
+     }
+ }
+
+    div.right-content{
+        margin: 0 auto;
+          width: 100%;
+            justify-content: center;
+            align-items: center;
+
+        div.bg-hero img{
+            display: flex;
+            justify-content: right;
+            
+            display: flex;
+           }
+        }
+    }
+
+    //CATEGORIES SECTION
+    p.shopCateg{
+        padding: 0 5em;
+    }
+    div.swiper{
+        // width: 100%;
+      
+        div.swiper-wrapper{
+          
+            div.swiper-slide{
+              
+                border: solid color(bg-font) 2px;
+                border-radius: 1em;
+                padding-top: 2em;
+                img{
+                    width:20%;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+        }
+            
+        div.swiper-button-next{
+        padding: 0 7em;
+        }
+        div.swiper-button-prev{
+            padding: 0 7em;
+            }
+
+    }
+
+    //ITEMS SECTION
+    div.item-container{
+        padding: 0 6em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 
-
 // DESKTOP VIEW 1280
+@media screen and (min-width: 1280px){
+
+//NAVIGATION
+    nav{
+        a.navbar-brand{
+            h1{
+                font-size: 28px;
+            }
+            span.ent{
+                font-size: 24px;
+            }
+        }
+
+        div.collapse ul{
+
+            li.nav-item{
+                a.nav-link{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+//ITEM LIST
+    div.item-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    
+}
