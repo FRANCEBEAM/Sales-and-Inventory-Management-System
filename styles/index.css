@@ -64,13 +64,14 @@ div.store-info {
   display: none;
 }
 
+p.shopCateg {
+  font-size: 12px;
+  padding: 0 2em;
+}
+
 div.swiper {
   padding: 1em 1em;
   margin-bottom: 3em;
-}
-div.swiper p {
-  font-weight: 500;
-  margin-bottom: 2em;
 }
 div.swiper div.wrapper {
   padding-top: 4em;
@@ -94,7 +95,7 @@ div.item-container {
   gap: 1em;
 }
 div.item-container div.card {
-  padding: 1em;
+  padding-top: 3em;
   margin-bottom: 4em;
 }
 div.item-container div.card img {
@@ -229,9 +230,15 @@ div.about-container div.about-socials {
     font-size: 20px;
   }
 
-  div.swiper p {
-    font-size: 20px;
+  p.shopCateg {
+    font-size: 14px;
+    padding: 0 3em;
   }
+
+  div.item-container div.card div.body-card {
+    padding-top: 4em;
+  }
+
   div.swiper div.swiper-wrapper div.swiper-slide img {
     width: 30%;
   }
@@ -240,11 +247,34 @@ div.about-container div.about-socials {
   }
 
   div.item-container {
-    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
   }
   div.item-container div.card {
-    padding: 1em;
-    margin-bottom: 2em;
+    padding-top: 3em;
+    margin-bottom: 4em;
+  }
+  div.item-container div.card img {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+  div.item-container div.card h5 {
+    font-size: 16px;
+  }
+  div.item-container div.card p {
+    font-size: 14px;
+  }
+  div.item-container div.card a {
+    font-size: 14px;
+  }
+
+  div.about-container div.about-text p {
+    font-size: 14px;
+    padding: 0 3em;
   }
 }
 @media screen and (min-width: 992px) {
@@ -272,7 +302,7 @@ div.about-container div.about-socials {
 
   div.search-container {
     width: 50%;
-    margin-left: auto;
+    margin: auto;
   }
   div.search-container input.form-control {
     padding: 1em;
@@ -280,14 +310,19 @@ div.about-container div.about-socials {
   div.search-container button.btn {
     width: 20%;
   }
+
+  p.shopCateg {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 @media screen and (min-width: 1200px) {
   nav {
-    padding: 0 4em;
+    padding: 0 5em;
   }
 
   div.search-container {
-    padding: 2em 4em;
+    padding: 2em 5em;
   }
 
   div.hero-container {
@@ -329,11 +364,13 @@ div.about-container div.about-socials {
   }
 
   p.shopCateg {
+    font-weight: 500;
     padding: 0 5em;
+    font-size: 16px;
+    margin-bottom: 2em;
   }
 
   div.swiper div.swiper-wrapper div.swiper-slide {
-    border: solid #212529 2px;
     border-radius: 1em;
     padding-top: 2em;
   }
@@ -351,24 +388,72 @@ div.about-container div.about-socials {
   }
 
   div.item-container {
-    padding: 0 6em;
+    padding: 3em 6em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  div.about-container div.about-text p {
+    padding: 0 7em;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1280px) {
   nav a.navbar-brand h1 {
-    font-size: 28px;
-  }
-  nav a.navbar-brand span.ent {
     font-size: 24px;
   }
+  nav a.navbar-brand span.ent {
+    font-size: 22px;
+  }
   nav div.collapse ul li.nav-item a.nav-link {
+    font-size: 18px;
+  }
+
+  div.hero-container div.left-content div.text-content h1 {
+    font-size: 70px;
+  }
+
+  p.shopCateg {
     font-size: 20px;
+    padding: 0 4em;
   }
 
   div.item-container {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  div.item-container div.card div.card-body img {
+    margin: auto;
+    justify-content: center;
+    width: 10%;
+  }
+  div.item-container div.card div.card-body h5 {
+    font-size: 18px;
+  }
+  div.item-container div.card div.card-body p {
+    font-size: 14px;
+  }
+  div.item-container div.card div.card-body a {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1390px) {
+  div.item-container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div.item-container div.card div.card-body img {
+    margin: auto;
+    justify-content: center;
+    width: 10%;
+  }
+  div.item-container div.card div.card-body h5 {
+    font-size: 20px;
+  }
+  div.item-container div.card div.card-body p {
+    font-size: 18px;
+  }
+  div.item-container div.card div.card-body a {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=index.css.map */

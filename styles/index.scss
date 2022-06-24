@@ -97,13 +97,14 @@ div.store-info{
 }
 
 //CATEGORIES 
+
+p.shopCateg{
+    font-size: 12px;
+    padding: 0 2em;
+}
 div.swiper{
     padding: 1em 1em;
     margin-bottom: 3em;
-    p{
-        font-weight: 500;
-        margin-bottom: 2em;
-    }
 
     div.wrapper{
         padding-top: 4em;
@@ -134,7 +135,7 @@ div.item-container{
 
 
     div.card{
-        padding: 1em;
+        padding-top: 3em;
         margin-bottom: 4em;
         img{
             margin: auto;
@@ -298,12 +299,24 @@ div.about-container{
         }
     }
 
-    //CATEGORY SECTION
-    div.swiper{
-        p{
-            font-size: 20px;
+        //CATEGORIES SECTION
+        p.shopCateg{
+            font-size: 14px;
+            padding: 0 3em;
         }
 
+        div.item-container{
+
+            div.card{
+                div.body-card{
+                    padding-top: 4em;
+                }
+               
+            }
+        }
+
+    //CATEGORY SECTION
+    div.swiper{
         div.swiper-wrapper{
 
             div.swiper-slide{
@@ -317,12 +330,42 @@ div.about-container{
         }
     }
 
-    //ITEM SECTION
-    div.item-container{
-        padding: 0 1em;
-        div.card{
-            padding: 1em;
-            margin-bottom: 2em;
+//ITEM SECTION
+div.item-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+
+
+    div.card{
+        padding-top: 3em;
+        margin-bottom: 4em;
+        img{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            width: 60%;
+        }
+        h5{
+            font-size: 16px;
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            font-size: 14px;
+        }
+        }
+    }
+
+    //ABOUT SECTION
+    div.about-container{
+        div.about-text{
+            p{
+                font-size: 14px;
+                padding: 0 3em;
+            }
         }
     }
 }
@@ -361,7 +404,7 @@ nav{
        //SEARCH BAR
        div.search-container{
         width: 50%;
-        margin-left: auto;
+        margin: auto;
         input.form-control{
             padding: 1em;
         }
@@ -369,6 +412,12 @@ nav{
             width: 20%;
         }
        }
+
+     //SHOP CATEGORY
+     p.shopCateg{
+        font-size: 18px;
+        font-weight: 500;
+     }
 }
 
 // LAPTOP VIEW 1200
@@ -377,12 +426,12 @@ nav{
 
 //Navigation
 nav{
-    padding: 0 4em;
+    padding: 0 5em;
 }
 
 //SEARCH BAR
 div.search-container{
-    padding: 2em 4em;
+    padding: 2em 5em;
 }
 
 //HERO SECTION
@@ -425,8 +474,7 @@ div.hero-container{
 
         div.bg-hero img{
             display: flex;
-            justify-content: right;
-            
+            justify-content: right; 
             display: flex;
            }
         }
@@ -434,7 +482,10 @@ div.hero-container{
 
     //CATEGORIES SECTION
     p.shopCateg{
+        font-weight: 500;
         padding: 0 5em;
+        font-size: 16px;
+        margin-bottom: 2em;
     }
     div.swiper{
         // width: 100%;
@@ -442,8 +493,7 @@ div.hero-container{
         div.swiper-wrapper{
           
             div.swiper-slide{
-              
-                border: solid color(bg-font) 2px;
+                // border: solid color(bg-font) 2px;
                 border-radius: 1em;
                 padding-top: 2em;
                 img{
@@ -466,12 +516,21 @@ div.hero-container{
 
     //ITEMS SECTION
     div.item-container{
-        padding: 0 6em;
+        padding: 3em 6em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-}
 
+    //ABOUT CONTAINER
+    div.about-container{
+        div.about-text{
+            p{
+                padding: 0 7em;
+                font-size: 16px;
+            }
+        }
+    }
+}
 
 // DESKTOP VIEW 1280
 @media screen and (min-width: 1280px){
@@ -480,28 +539,91 @@ div.hero-container{
     nav{
         a.navbar-brand{
             h1{
-                font-size: 28px;
+                font-size: 24px;
             }
             span.ent{
-                font-size: 24px;
+                font-size: 22px;
             }
         }
 
         div.collapse ul{
-
             li.nav-item{
                 a.nav-link{
-                    font-size: 20px;
+                    font-size: 18px;
                 }
             }
         }
     }
 
-//ITEM LIST
-    div.item-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    //HERO SECTION
+    div.hero-container{
+        div.left-content{
+            div.text-content{
+                h1{
+                  font-size: 70px;          
+                }
+            }
+        }
     }
 
+    //SHOP CATEGORY
+    p.shopCateg{
+        font-size: 20px;
+        padding: 0 4em;
+    }
+
+    //ITEM LIST
+    div.item-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        div.card{
+           
+            div.card-body{
+                img{
+                    margin: auto;
+                    justify-content: center;
+                    width: 10%;
+                }
+                h5{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1390px){
+
+  //ITEM LIST SECTION
+  div.item-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
+    div.card{
+       
+        div.card-body{
+            img{
+                margin: auto;
+                justify-content: center;
+                width: 10%;
+            }
+            h5{
+                font-size: 20px;
+            }
+            p{
+                font-size: 18px;
+            }
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
 }
