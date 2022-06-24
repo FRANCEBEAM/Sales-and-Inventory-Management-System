@@ -80,6 +80,15 @@ div.login-form div.right-content div.already-acc {
   div.login-form div.right-content form label {
     font-size: 20px;
   }
+  div.login-form div.right-content form input {
+    padding: 0.8em;
+  }
+  div.login-form div.right-content form label.terms {
+    font-size: 16px;
+  }
+  div.login-form div.right-content form button {
+    padding: 0.8em;
+  }
   div.login-form div.right-content div.already-acc {
     padding: 0 2em;
     font-size: 20px;

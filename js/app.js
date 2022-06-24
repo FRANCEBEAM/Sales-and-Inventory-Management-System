@@ -1,3 +1,5 @@
+
+// LETS CREATE SWIPER
 var swiper = new Swiper('.swiper', {
     slidesPerView: 3,
     spaceBetween: 15,
@@ -11,3 +13,5 @@ var swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     },
   });
+
+//LETS CREATE SMOOTH SCROLL DOWN

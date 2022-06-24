@@ -73,7 +73,7 @@ div.register-form{
         grid-template-columns: 1fr 1fr;
        
         div.left-content{
-            padding: 7em 1em;
+            padding: 4em 1em;
             background: color(bg-gray);
             display: inline-block;
             h1{
@@ -88,7 +88,7 @@ div.register-form{
                     font-size: 16px;
                 }
                 img.tabimg{
-                    margin-top: 3em;
+                    margin-top: 2em;
                     display: flex;
                 }
             }
@@ -101,6 +101,7 @@ div.register-form{
     // REGISTER FORM
     div.register-form{
         div.left-content{
+            padding: 4em 1em;
             div.tabimg-container{
                 h1{
                     font-size: 32px;
@@ -120,10 +121,16 @@ div.register-form{
                 }
             }
             form{
-                padding: 0 4em;
+                padding: 6em 4em;
                 margin-bottom: 4em;
                 label{
                     font-size: 20px;
+                }
+                input{
+                    padding: .7em;
+                }
+                button{
+                    padding: .9em;
                 }
             }
         }
@@ -136,7 +143,7 @@ div.register-form{
     div.right-content{
         form{
             padding: 0 7em;
-            margin-bottom: 4em;
+            margin-bottom: 3em;
             label{
                 font-size: 20px;
             }

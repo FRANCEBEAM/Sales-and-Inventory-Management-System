@@ -45,7 +45,7 @@ div.register-form div.right-content div.d-grid button {
     grid-template-columns: 1fr 1fr;
   }
   div.register-form div.left-content {
-    padding: 7em 1em;
+    padding: 4em 1em;
     background: #F2F2F2;
     display: inline-block;
   }
@@ -62,11 +62,14 @@ div.register-form div.right-content div.d-grid button {
     font-size: 16px;
   }
   div.register-form div.left-content div.tabimg-container img.tabimg {
-    margin-top: 3em;
+    margin-top: 2em;
     display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
+  div.register-form div.left-content {
+    padding: 4em 1em;
+  }
   div.register-form div.left-content div.tabimg-container h1 {
     font-size: 32px;
   }
@@ -80,17 +83,23 @@ div.register-form div.right-content div.d-grid button {
     font-size: 20px;
   }
   div.register-form div.right-content form {
-    padding: 0 4em;
+    padding: 6em 4em;
     margin-bottom: 4em;
   }
   div.register-form div.right-content form label {
     font-size: 20px;
   }
+  div.register-form div.right-content form input {
+    padding: 0.7em;
+  }
+  div.register-form div.right-content form button {
+    padding: 0.9em;
+  }
 }
 @media screen and (min-width: 1280px) {
   div.right-content form {
     padding: 0 7em;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
   }
   div.right-content form label {
     font-size: 20px;
