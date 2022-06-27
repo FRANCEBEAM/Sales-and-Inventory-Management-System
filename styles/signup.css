@@ -41,6 +41,7 @@ div.register-form div.right-content div.d-grid button {
 
 @media screen and (min-width: 768px) {
   div.register-form {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

@@ -35,6 +35,9 @@ html{
 
 //NAVIGATION SECTION
 nav{
+    box-shadow: -1px 6px 59px -35px rgba(41,41,41,0.75);
+    -webkit-box-shadow: -1px 6px 59px -35px rgba(41,41,41,0.75);
+    -moz-box-shadow: -1px 6px 59px -35px rgba(41,41,41,0.75);
     padding: 0 1em;
     div.logo{
        h1{
@@ -47,10 +50,33 @@ nav{
        }
     }
 
+    ul{
+        li.nav-item{
+            a{  
+                 color: #212529;
+                text-decoration: none;
+                list-style: none;
+            }
+        }
+    }
+
+
     div.collapse{
        ul.navbar-nav{
         li.nav-item{
-            a:hover{
+            a.home:hover{
+                color: color(bg-orange);
+                transition: 0.4s;
+            }
+            a.shop:hover{
+                color: color(bg-orange);
+                transition: 0.4s;
+            }
+            a.about:hover{
+                color: color(bg-orange);
+                transition: 0.4s;
+            }
+            a.login:hover{
                 color: color(bg-orange);
                 transition: 0.4s;
             }
@@ -76,7 +102,7 @@ div.search-container{
 
 //HERO SECTION
 div.hero-container{
-    padding: 4em 1em;
+    padding: 7em 1em;
 
     div.text-content{
         h5{
@@ -91,13 +117,17 @@ div.hero-container{
             font-weight: bold;
         }
     }
-    button{
+    a.btn-dark{
        align-items: center;
        justify-content: center;
+       width: 40%;
         margin: 2em auto;
+        padding: .8em;
         border-radius: .7em;
         display: flex;
         font-weight: bold;
+        text-decoration: none;
+        text-align: center;
     }
 
     div.bg-hero img{
@@ -114,12 +144,12 @@ div.store-info{
 //CATEGORIES 
 
 p.shopCateg{
-    font-size: 12px;
-    padding: 0 2em;
+    font-size: 14px;
+    padding: 1em 2em;
 }
 div.swiper{
     padding: 1em 1em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 
     div.wrapper{
         padding-top: 4em;
@@ -139,6 +169,14 @@ div.swiper{
             font-size: 14px;
         }
     }
+}
+
+//DROP DOWN
+div.dropdown{
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
 }
 
 //ITEM SECTION
@@ -174,7 +212,7 @@ div.item-container{
 div.pagination-container{
     justify-content: center;
     display: flex;
-    margin-bottom: 4em;
+    margin-bottom: 12em;
 }
 
 //ABOUT SECTION
@@ -201,6 +239,30 @@ div.about-container{
 
 
 @media screen and (min-width: 688px){
+
+    //BUTTON SHOP NOW
+    div.hero-container{
+        div.left-content{
+            a.btn-dark{
+                align-items: center;
+                justify-content: center;
+                 width: 30%;
+                 margin: 2em auto;
+                 padding: 1.4em;
+                 border-radius: .7em;
+                 display: flex;
+                 font-weight: bold;
+                 text-decoration: none;
+             }
+        }
+    }
+
+    div.dropdown{
+        
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+    }
 
     //ITEM SECTION
     div.item-container{
@@ -253,9 +315,17 @@ div.about-container{
             }
         }
 
-        button{
-            padding: 1em;
-        }
+        a.btn-dark{
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+             margin: 2em auto;
+             padding: 1.4em;
+             border-radius: .7em;
+             display: flex;
+             font-weight: bold;
+             text-decoration: none;
+         }
      }
 
         div.right-content{
@@ -278,6 +348,11 @@ div.about-container{
             
         }
         }
+
+    //DROP DOWN SECTION
+    div.dropdown{
+        padding: 0 2.4em;
+    }
 
     //STORE INFO
     div.store-info{
@@ -406,6 +481,22 @@ nav{
        }
     }
 
+    ul{
+        li.nav-item{
+            a.btnRegister{
+                color: #FFFFFF;
+                border-radius: .4em;
+                padding: .6em;
+                background: #0d6efd;
+            }
+            a.btnRegister:hover{
+                background: #0853c4;
+              
+                transition: 0.4s;
+            }
+        }
+    }
+
     div.collapse{
         ul.navbar-nav{
             margin-left: auto;
@@ -416,6 +507,16 @@ nav{
           }
          }
        }
+
+       //BUTTON SHOP NOW
+       div.hero-container{
+        div.left-content{
+        a.btn-dark{     
+         width: 20%;
+         padding: 1.4em;
+         }
+      }
+    }
 
        //SEARCH BAR
        div.search-container{
@@ -433,6 +534,11 @@ nav{
      p.shopCateg{
         font-size: 18px;
         font-weight: 500;
+     }
+
+     //DROP DOWN
+     div.dropdown{
+        padding: 0 3em;
      }
 }
 
@@ -452,7 +558,7 @@ div.search-container{
 
 //HERO SECTION
 div.hero-container{
-    padding: 0 5em;
+    padding: 4em 5em;
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
@@ -475,10 +581,14 @@ div.hero-container{
         }
     }
 
-    button{
-        display: inline-flex;
-        justify-content: left;
+    a.btn-dark{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 40%;
         padding: 1em;
+         font-weight: bold;
      }
  }
 
@@ -503,6 +613,12 @@ div.hero-container{
         font-size: 16px;
         margin-bottom: 2em;
     }
+
+    //DROP DOWN
+    div.dropdown{
+        padding: 3em 6em;
+    }
+
     div.swiper{
         // width: 100%;
       
@@ -541,7 +657,7 @@ div.hero-container{
     div.about-container{
         div.about-text{
             p{
-                padding: 0 7em;
+                padding: 0 12em;
                 font-size: 16px;
             }
         }
@@ -555,10 +671,10 @@ div.hero-container{
     nav{
         a.navbar-brand{
             h1{
-                font-size: 24px;
+                font-size: 22px;
             }
             span.ent{
-                font-size: 22px;
+                font-size: 20px;
             }
         }
 
@@ -573,12 +689,17 @@ div.hero-container{
 
     //HERO SECTION
     div.hero-container{
+        padding-top: 4em;
         div.left-content{
             div.text-content{
                 h1{
                   font-size: 70px;          
                 }
             }
+                    a.btn-dark{               
+                        width: 30%;
+                        padding: 1em;             
+                     }
         }
     }
 
@@ -616,6 +737,12 @@ div.hero-container{
 }
 
 @media screen and (min-width: 1390px){
+
+    //HERO SECTION
+    div.hero-container{
+        max-width: 1280;
+        padding: 4em 2em;
+    }
 
   //ITEM LIST SECTION
   div.item-container{

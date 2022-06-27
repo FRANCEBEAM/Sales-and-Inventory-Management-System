@@ -16,6 +16,9 @@ html {
 }
 
 nav {
+  box-shadow: -1px 6px 59px -35px rgba(41, 41, 41, 0.75);
+  -webkit-box-shadow: -1px 6px 59px -35px rgba(41, 41, 41, 0.75);
+  -moz-box-shadow: -1px 6px 59px -35px rgba(41, 41, 41, 0.75);
   padding: 0 1em;
 }
 nav div.logo h1 {
@@ -26,7 +29,24 @@ nav div.logo span.ent {
   font-size: 12px;
   letter-spacing: 5px;
 }
-nav div.collapse ul.navbar-nav li.nav-item a:hover {
+nav ul li.nav-item a {
+  color: #212529;
+  text-decoration: none;
+  list-style: none;
+}
+nav div.collapse ul.navbar-nav li.nav-item a.home:hover {
+  color: #FF432A;
+  transition: 0.4s;
+}
+nav div.collapse ul.navbar-nav li.nav-item a.shop:hover {
+  color: #FF432A;
+  transition: 0.4s;
+}
+nav div.collapse ul.navbar-nav li.nav-item a.about:hover {
+  color: #FF432A;
+  transition: 0.4s;
+}
+nav div.collapse ul.navbar-nav li.nav-item a.login:hover {
   color: #FF432A;
   transition: 0.4s;
 }
@@ -42,7 +62,7 @@ div.search-container form button {
 }
 
 div.hero-container {
-  padding: 4em 1em;
+  padding: 7em 1em;
 }
 div.hero-container div.text-content h5 {
   text-align: center;
@@ -55,13 +75,17 @@ div.hero-container div.text-content h1 {
   font-size: 36px;
   font-weight: bold;
 }
-div.hero-container button {
+div.hero-container a.btn-dark {
   align-items: center;
   justify-content: center;
+  width: 40%;
   margin: 2em auto;
+  padding: 0.8em;
   border-radius: 0.7em;
   display: flex;
   font-weight: bold;
+  text-decoration: none;
+  text-align: center;
 }
 div.hero-container div.bg-hero img {
   display: none;
@@ -73,13 +97,13 @@ div.store-info {
 }
 
 p.shopCateg {
-  font-size: 12px;
-  padding: 0 2em;
+  font-size: 14px;
+  padding: 1em 2em;
 }
 
 div.swiper {
   padding: 1em 1em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 div.swiper div.wrapper {
   padding-top: 4em;
@@ -93,6 +117,13 @@ div.swiper div.swiper-slide img {
 div.swiper div.swiper-slide p {
   margin-top: 1em;
   text-align: center;
+  font-size: 14px;
+}
+
+div.dropdown {
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
   font-size: 14px;
 }
 
@@ -125,7 +156,7 @@ div.item-container div.card a {
 div.pagination-container {
   justify-content: center;
   display: flex;
-  margin-bottom: 4em;
+  margin-bottom: 12em;
 }
 
 div.about-container {
@@ -150,6 +181,24 @@ div.about-container div.about-socials {
 }
 
 @media screen and (min-width: 688px) {
+  div.hero-container div.left-content a.btn-dark {
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 2em auto;
+    padding: 1.4em;
+    border-radius: 0.7em;
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  div.dropdown {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+
   div.item-container {
     justify-content: center;
     align-items: center;
@@ -187,8 +236,16 @@ div.about-container div.about-socials {
   div.hero-container div.left-content div.text-content h1 {
     font-size: 46px;
   }
-  div.hero-container div.left-content button {
-    padding: 1em;
+  div.hero-container div.left-content a.btn-dark {
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 2em auto;
+    padding: 1.4em;
+    border-radius: 0.7em;
+    display: flex;
+    font-weight: bold;
+    text-decoration: none;
   }
   div.hero-container div.right-content {
     display: flex;
@@ -203,6 +260,10 @@ div.about-container div.about-socials {
 
   div.search-container input.form-control {
     padding: 1em;
+  }
+
+  div.dropdown {
+    padding: 0 2.4em;
   }
 
   div.store-info {
@@ -300,12 +361,27 @@ div.about-container div.about-socials {
     font-size: 16px;
     letter-spacing: 5px;
   }
+  nav ul li.nav-item a.btnRegister {
+    color: #FFFFFF;
+    border-radius: 0.4em;
+    padding: 0.6em;
+    background: #0d6efd;
+  }
+  nav ul li.nav-item a.btnRegister:hover {
+    background: #0853c4;
+    transition: 0.4s;
+  }
   nav div.collapse ul.navbar-nav {
     margin-left: auto;
   }
   nav div.collapse ul.navbar-nav li.nav-item a {
     font-size: 16px;
     margin-left: 2em;
+  }
+
+  div.hero-container div.left-content a.btn-dark {
+    width: 20%;
+    padding: 1.4em;
   }
 
   div.search-container {
@@ -323,6 +399,10 @@ div.about-container div.about-socials {
     font-size: 18px;
     font-weight: 500;
   }
+
+  div.dropdown {
+    padding: 0 3em;
+  }
 }
 @media screen and (min-width: 1200px) {
   nav {
@@ -334,7 +414,7 @@ div.about-container div.about-socials {
   }
 
   div.hero-container {
-    padding: 0 5em;
+    padding: 4em 5em;
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
@@ -354,10 +434,14 @@ div.about-container div.about-socials {
     text-align: left;
     font-size: 46px;
   }
-  div.hero-container div.left-content button {
-    display: inline-flex;
-    justify-content: left;
+  div.hero-container div.left-content a.btn-dark {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
     padding: 1em;
+    font-weight: bold;
   }
   div.hero-container div.right-content {
     margin: 0 auto;
@@ -376,6 +460,10 @@ div.about-container div.about-socials {
     padding: 0 6em;
     font-size: 16px;
     margin-bottom: 2em;
+  }
+
+  div.dropdown {
+    padding: 3em 6em;
   }
 
   div.swiper div.swiper-wrapper div.swiper-slide {
@@ -402,23 +490,30 @@ div.about-container div.about-socials {
   }
 
   div.about-container div.about-text p {
-    padding: 0 7em;
+    padding: 0 12em;
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1280px) {
   nav a.navbar-brand h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
   nav a.navbar-brand span.ent {
-    font-size: 22px;
+    font-size: 20px;
   }
   nav div.collapse ul li.nav-item a.nav-link {
     font-size: 18px;
   }
 
+  div.hero-container {
+    padding-top: 4em;
+  }
   div.hero-container div.left-content div.text-content h1 {
     font-size: 70px;
+  }
+  div.hero-container div.left-content a.btn-dark {
+    width: 30%;
+    padding: 1em;
   }
 
   p.shopCateg {
@@ -446,6 +541,11 @@ div.about-container div.about-socials {
   }
 }
 @media screen and (min-width: 1390px) {
+  div.hero-container {
+    max-width: 1280;
+    padding: 4em 2em;
+  }
+
   div.item-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
