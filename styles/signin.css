@@ -83,6 +83,9 @@ div.login-form div.right-content div.already-acc {
   div.login-form div.right-content form input {
     padding: 0.8em;
   }
+  div.login-form div.right-content form label.remember {
+    margin-left: 0.7em;
+  }
   div.login-form div.right-content form label.terms {
     font-size: 16px;
   }
